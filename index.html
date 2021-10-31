@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans:wght@700&family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 260px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      
+      padding-top: 20px;
+    }
+    
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .main {
+      margin-left: 160px; /* Same as the width of the sidenav */
+      font-size: 28px; /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+</head>
+
+<body>
+  <!-- Page content -->
+  <div class="main">
+    ...
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Bellybutton Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+        <div class="well">
+          <h3>Test Subject ID No.:</h3>
+           <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel">
+          <div class="panel-heading">
+            <h4 class="panel-title">Demographic Info</h4>
+            <hr>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-6">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/plots.js"></script>
+  <script src="js/charts.js"></script>
+</body>
+
+<style>
+  body {
+    background-color: rgb(43, 43, 44);
+  }
+  h1{
+    background-color: rgba(43, 43, 44, 0.858);
+  }
+  h4{
+    font-size: 18px;
+  }
+  h5{
+    color: rgb(255, 255, 255);
+  }
+  p{
+    background-color: rgb(43, 43, 44, 0.858);
+  }
+  select{
+    font-size: large;
+    background-color: rgb(43, 43, 44);
+  }
+  .jumbotron {
+    background-image: url("../images/bacteria2.jpg");
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15vw;
+    color: rgb(255, 255, 255);
+    background-size: 100%;
+    text-align: center;
+  }
+  .panel {
+    color:ghostwhite;
+    background-color: rgb(43, 43, 44);
+  }
+  .well {
+    color:ghostwhite;
+    outline-color: rgb(43, 43, 44);
+    background-color: rgb(43, 43, 44);
+  }
+  .col-md-12{
+    align-content: right;
+    padding-left: 20px;
+  }
+</style>
+</html>
