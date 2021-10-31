@@ -126,8 +126,8 @@ function buildCharts(sample) {
         title: "OTU ID",
         color:'rgba(245,246,249,1)'},
       yaxis: {color:'rgba(245,246,249,1)'},
-      autosize: true,
-      automargin: true,
+      height: 600,
+      width: 900,
       hovermode: "closest"
   };
 

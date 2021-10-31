@@ -15,35 +15,31 @@
 
 <body>
   <!-- Page content -->
-  <div class="main">
-    ...
-  </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Bellybutton Biodiversity Dashboard</h1>
+        <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3"></div>
+      <div class="col-md-2">
         <div class="well">
-          <h3>Test Subject ID No.:</h3>
-           <!-- <select id="selDataset"></select> -->
+          <h5>Test Subject ID No.:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel">
           <div class="panel-heading">
-            <h4 class="panel-title">Demographic Info</h4>
+            <h3 class="panel-title">Demographic Info</h3>
             <hr>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div id="bar"></div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div id="gauge"></div>
       </div>
     </div>
@@ -81,7 +77,7 @@
     background-color: rgb(43, 43, 44);
   }
   .jumbotron {
-    background-image: url("../images/bacteria2.jpg");
+    background-image: url("images/bacteria2.jpg");
     font-family: 'Montserrat', sans-serif;
     font-size: 15vw;
     color: rgb(255, 255, 255);
@@ -96,6 +92,9 @@
     color:ghostwhite;
     outline-color: rgb(43, 43, 44);
     background-color: rgb(43, 43, 44);
+  }
+  .main-svg{
+    text-align: center;
   }
 </style>
 </html>
