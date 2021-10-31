@@ -6,7 +6,7 @@
 ---
 
 ## **Code and Resources**
-* Link to [Pages]()
+* Link to [Pages](https://annas000.github.io/Plotly/)
 * Link to [index.html](https://github.com/annaS000/Plotly/blob/main/docs/index.html)
 * Link to [charts.js](https://github.com/annaS000/Plotly/blob/main/docs/js/charts.js)
 
@@ -32,4 +32,4 @@
 
 ## **Deliverable 4**
 ### **Customize the Dashboard**
-![]()
+![](https://github.com/annaS000/Plotly/blob/main/docs/images/Screen%20Shot%202021-10-31%20at%207.25.49%20PM.png?raw=true)
